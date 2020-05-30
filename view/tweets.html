@@ -1,0 +1,21 @@
+{{ define "content" }}
+<main>
+  <div class="new-tweet">
+    <div class="edit-box">
+      <form class="tweet-form" action="/home" method="post" enctype="application/x-www-form-urlencoded">
+        <div class="edit-box-top">
+          <img src="./view/img/icon.jpg">
+            <textarea name="tweet"></textarea>
+        </div>
+        <div class="edit-box-bottom">
+          <input type="submit" value="tweet" class="btn">
+        </div>
+    </form>
+    </div>
+  </div>
+  <div class="tweets">
+{{ template "tweet" . }}
+  </div>
+</main>
+
+{{ end }}

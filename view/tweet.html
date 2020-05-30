@@ -1,0 +1,46 @@
+{{ define "tweet" }}
+
+{{ range . }}
+<div class="tweet">
+  <div class="tweet-left">
+    <img src="./view/img/icon.jpg">
+  </div>
+  <div class="tweet-right">
+    <div class="tweet-right-top">
+      <span class="account-name">うざい犬</span>
+      <span class="account-id">@uzadog</span>
+      <span class="tweet-date">{{ .Created_at }}</span>
+    </div>
+    <div class="tweet-right-middle">
+      <p>{{ .Body }}</p>
+    </div>
+    <div class="tweet-right-bottom">
+      <div class="reply">
+        <div class="reply-icon">
+        </div>
+      </div>
+      <div class="retweet">
+        <div class="retweet-icon">
+        </div>
+        <div class="retweet-number">
+          59
+        </div>
+      </div>
+      <div class="like">
+        <div class="like-icon">
+        </div>
+        <div class="like-number">
+          334
+        </div>
+      </div>
+      <div class="share">
+        <div class="share-icon">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{{ end }}
+
+{{ end }}
