@@ -17,9 +17,7 @@ var empty interface{}
 
 func GetTweets() (tweets []Tweet){
   dbms := "mysql"
-  // dbuser := "editer"
   dbuser := "root"
-  // dbpass := "Tr_kp_514021"
   dbpass := ""
   dbname := "twitter_clone"
 
@@ -47,9 +45,7 @@ func GetTweets() (tweets []Tweet){
 
 func PostTweets(account_id int, body string) {
   dbms := "mysql"
-  // dbuser := "editer"
   dbuser := "root"
-  // dbpass := "Tr_kp_514021"
   dbpass := ""
   dbname := "twitter_clone"
 
