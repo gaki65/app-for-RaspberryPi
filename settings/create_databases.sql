@@ -1,6 +1,6 @@
 create database twitter_clone;
 
-create user editer@localhost identified by 'Tr_kp_514021';
+create user editer@localhost identified by 'nyan';
 
 grant create on twitter_clone.* to editer@localhost;
 
